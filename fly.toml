@@ -1,0 +1,16 @@
+app = 'grandpa'
+primary_region = 'iad'
+
+[build]
+
+[env]
+  PYTHONUNBUFFERED = '1'
+  DATA_DIR = '/data'
+
+[[vm]]
+  size = 'shared-cpu-1x'
+  memory = '256mb'
+
+[[mounts]]
+  source = 'bot_memory'
+  destination = '/data'
